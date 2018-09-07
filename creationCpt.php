@@ -40,7 +40,7 @@ if ($donnees1['nb1']==1) {
 	</div>
 	<div id=deco>
 			<div id=boutonD onclick="self.location.href='deconnexion.php'">
-				déconnexion	
+				deconnexion	
 			</div>
 	</div>
 </div>
@@ -61,7 +61,7 @@ if ($donnees2['nb1'] !=0) {
 				RETOUR	
 			</div>
 		</div>
-<?
+<?php
 }
 else {
 	$connection2->closeCursor();

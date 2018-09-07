@@ -5,7 +5,8 @@ include "connexion.php";
 $bdd = connexion();
 ?>
 <head>
-	<link href="./css/StyleComm.css" rel="stylesheet" media="all" type="text/css">
+	<link href="./css/StyleSub.css" rel="stylesheet" media="all" type="text/css">
+	<link href="./css/baniere.css" rel="stylesheet" media="all" type="text/css">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
 
@@ -35,6 +36,27 @@ Si login OK
 if ($donnees1['nb1']==1) {
 	?>
 <div id=header>
+
+        <div id=typecom>
+        <?php
+                $connection->closeCursor();
+                $connection3 = $bdd->query("SELECT * FROM choix;");
+                $donnee3 = $connection3->fetch();
+                echo "Commande :";
+                echo "</br>";
+                echo "<div id=resultat>";
+                echo $donnee3['choix'];
+                echo "</div>";
+                echo "</br>";
+                echo "Selectionné le ";
+                echo "</br>";
+                echo "<div id=resultat>";
+                echo $donnee3['jour'];
+                echo "</div>";
+        ?>
+        </div>
+
+
 	<div id=banniere>
 		<img src="images/banniere.jpg" />
 	</div>
@@ -61,7 +83,7 @@ $connection->closeCursor();
 /********************************************************
 si commande deja passe
 ********************************************************/
-$menu1 = $bdd->query("select count(*) as com from commande where nom='".$login."'");
+$menu1 = $bdd->query("select count(*) as com from commande where id ='".$login."'");
 $donnees1 = $menu1->fetch();
 if ($donnees1['com']!=0) {
 	?>	
@@ -84,7 +106,7 @@ Si pas de commande
 ?>
 <div id=page>
         <div id=formulaire>
-        <form action="verifCommande.php" method="post">
+        <form action="verifSubway.php" method="post">
 	<div id=pain>		
 		<div class=titre>
 			<b>1 -  Choix du pain : </b>
