@@ -5,6 +5,7 @@ include "connexion.php";
 $bdd = connexion();
 ?>
 <head>
+	<link href="./css/baniere.css" rel="stylesheet" media="all" type="text/css">
 	<link href="./css/StyleEnregSub.css" rel="stylesheet" media="all" type="text/css">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
@@ -70,7 +71,7 @@ if ($donnees1['nb1']==1) {
 	?>
 	</div>
 	<div id=deco>
-			<div id=boutonD onclick="self.location.href='deconnexion.php'">
+			<div id=boutonDH onclick="self.location.href='deconnexion.php'">
 				déconnexion	
 			</div>
 	</div>
