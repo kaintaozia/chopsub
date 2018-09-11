@@ -175,7 +175,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Parrain" />
                         </div>
                         <div id=col1>
-                               <b>Parrain : </b> Pain brioché, steak 165g charolais, bacon, tomcates, oignons rouges, salade, fromade de chevres, moutarde au miel
+                               <b>Parrain : </b> Pain brioché, steak 165g charolais, bacon, tomate, oignons rouges, salade, fromade de chevres, moutarde au miel
                         </div>
                         <div id=col2>
                                 9 €
@@ -189,7 +189,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Big Veggie" />
                         </div>
                         <div id=col1>
-                              <b>  Big Veggie :</b> Pain brioché, burger végétarien, salade, tomcate, oignons rouges, cheddar, ketchup, moutarde 
+                              <b>  Big Veggie :</b> Pain brioché, burger végétarien, salade, tomate, oignons rouges, cheddar, ketchup, moutarde 
                         </div>
                         <div id=col2>
                                 8 €
@@ -274,7 +274,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Chickito" />
                         </div>
                         <div id=col1>
-                              <b>  Chickito :</b> Petit pain brioché, burger de poulet pané au céréales 125g,tomcate, salade, oignons rouges, sauce BBQ, cheddar
+                              <b>  Chickito :</b> Petit pain brioché, burger de poulet pané au céréales 125g,tomate, salade, oignons rouges, sauce BBQ, cheddar
                         </div>
                         <div id=col2>
                                 6 €
