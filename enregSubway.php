@@ -39,6 +39,7 @@ if ($donnees1['nb1']==1) {
 
         <div id=typecom>
         <?php
+	/*
                 $connection->closeCursor();
                 $connection3 = $bdd->query("SELECT * FROM choix;");
                 $donnee3 = $connection3->fetch();
@@ -53,6 +54,7 @@ if ($donnees1['nb1']==1) {
                 echo "<div id=resultat>";
                 echo $donnee3['jour'];
                 echo "</div>";
+	*/
         ?>
         </div>
 
@@ -126,11 +128,14 @@ $bdd->exec("insert into commande (id, type, jour) values ('".$login."','subway',
 	<div id=text>
 		Votre commande est enregistrée 
 	</div>	
-
-
+<?php
+header ("Refresh: 1;URL=identification.php");
+?>
+<!--
 			<div id=boutonD onclick="self.location.href='identification.php'">
 					ACCUEIL
 			</div>
+-->
 
 <?php
 }

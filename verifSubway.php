@@ -5,8 +5,8 @@ include "connexion.php";
 $bdd = connexion();
 ?>
 <head>
-	<link href="./css/StyleVerifSub.css" rel="stylesheet" media="all" type="text/css">
-	<link href="./css/baniere.css" rel="stylesheet" media="all" type="text/css">
+        <link href="./css/baniere.css" rel="stylesheet" media="all" type="text/css">
+	<link href="./css/StyleVerifSub.css" rel="stylesheet" media="all" type="text/css"> 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
 
@@ -40,6 +40,7 @@ if ($donnees1['nb1']==1) {
 
         <div id=typecom>
         <?php
+		/*
                 $connection->closeCursor();
                 $connection3 = $bdd->query("SELECT * FROM choix;");
                 $donnee3 = $connection3->fetch();
@@ -54,6 +55,7 @@ if ($donnees1['nb1']==1) {
                 echo "<div id=resultat>";
                 echo $donnee3['jour'];
                 echo "</div>";
+		*/
         ?>
         </div>
 

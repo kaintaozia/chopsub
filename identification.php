@@ -6,6 +6,7 @@ $bdd = connexion();
 ?>
 <head>
 <link href="./css/StyleIdenti.css" rel="stylesheet" media="all" type="text/css">
+<link href="./css/baniere.css" rel="stylesheet" media="all" type="text/css">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
 
@@ -26,7 +27,7 @@ if ($donnees1['nb1']==1) {
 	?>
 <div id=header>
 	<div id=typecom>
-	<?php
+	<?php /*
 		$connection->closeCursor();	
 		$connection3 = $bdd->query("SELECT * FROM choix;");
 	        $donnee3 = $connection3->fetch();
@@ -40,8 +41,37 @@ if ($donnees1['nb1']==1) {
 		echo "</br>";
 		echo "<div id=resultat>";
 		echo $donnee3['jour']; 
-		echo "</div>";
+		echo "</div>"; */
 	?>
+	
+		<div id=nbsub>
+		<?php	/*
+			$connection->closeCursor();
+		        $connection3 = $bdd->query("SELECT count(*) as com FROM subway;");
+                	$donnee3 = $connection3->fetch();
+			echo "nombre de commande :";
+			echo "</br>";
+			echo "subway : ".$donnee3['com'];
+			$connection->closeCursor();
+		?>
+		</div>
+		<div id=nbpizza>
+		<?php   $connection->closeCursor();
+                	$connection4 = $bdd->query("SELECT count(*) as com FROM pizza;");
+	                $donnee4 = $connection4->fetch();
+        	        echo "</br>";
+                	echo "Pizza : ".$donnee4['com'];
+	        ?>
+		</div>
+		<div id=nbburger>
+		<?php   $connection->closeCursor();
+                	$connection5 = $bdd->query("SELECT count(*) as com FROM burger;");
+	                $donnee5 = $connection5->fetch();
+        	        echo "</br>";
+                	echo "Burger : ".$donnee5['com']; */
+	        ?>
+		</div>
+
 	</div>
 
 	<div id=banniere>
@@ -68,36 +98,51 @@ if ($donnees1['nb1']==1) {
 
 <!--***********************************************************
                 Affichage du menu si admin
-************************************************************--!>
+************************************************************ -->
 
 <?php
-	$connection->closeCursor();
+/*	$connection->closeCursor();
         $connection2 = $bdd->query("SELECT admin FROM identi where login='".$login."' AND mdp='".$mdp."'");
         $donnee2 = $connection2->fetch();
-        if ($donnee2['admin']==1) {
+        if ($donnee2['admin']==1) { */ 
         	?>
+		<div id=menuTitre>
+			Nombre de commandes : 
+		</div>
 	        <div id=menu>
 			<div id=type1>
-				 <form action="choixCommande.php" method="post">
-					<input type="submit" value="SUBWAY" name="commande" id="choix1">
-				</form>
+			<?php   
+                	        $connection->closeCursor();
+        	                $connection3 = $bdd->query("SELECT count(*) as com FROM subway;");
+	                        $donnee3 = $connection3->fetch();
+                	        echo "subway : ".$donnee3['com'];
+        	                $connection->closeCursor();
+	                ?>				 
 			</div>	
 
 			<div id=type2>
-                                 <form action="choixCommande.php" method="post">
-                                        <input type="submit" value="PIZZA" name="commande" id="choix2">
-                                </form>
+			<?php   
+				$connection->closeCursor();
+	                        $connection4 = $bdd->query("SELECT count(*) as com FROM pizza;");
+        	                $donnee4 = $connection4->fetch();
+                                echo "Pizza : ".$donnee4['com'];
+	                ?>
                         </div>
 
 
 			<div id=type3>
-                                 <form action="choixCommande.php" method="post">
-                                        <input type="submit" value="BURGER" name="commande" id="choix3">
-                                </form>
+			<?php   
+				$connection->closeCursor();
+	                        $connection5 = $bdd->query("SELECT count(*) as com FROM burger;");
+        	                $donnee5 = $connection5->fetch();
+                                echo "Burger : ".$donnee5['com']; 
+                	?>
+
                         </div>
 	        </div>
-	        <?php
-        } ?>
+		<?php
+//			}  
+		?>
 
 
 <!-- ***************************************************************
@@ -108,93 +153,31 @@ if ($donnees1['nb1']==1) {
 <div id=page>
 	<div id=MenuP>
 
-<?php
-/*---------------------------------------------
-	Si choix subway
------------------------------------------------*/
-	$connection1 = $bdd->query("SELECT choix from choix;");
-	$donnees2 = $connection1->fetch();
-	if ($donnees2['choix']=='subway'){ 
-?>
-
 
 		<div id=Option1>
 			<div id=bouton1 onclick="self.location.href='subway.php'">
 				Subway
 			</div>
 		</div>
-                <div id=Option2b>
-                        <div id=bouton2b onclick="self.location.href='affichComm.php'">
-                                Visualiser ma commande
-                        </div>
-                </div>
-        </div>
-<?php
-	}
-
-/*---------------------------------------------
-        Si choix pizza
------------------------------------------------*/
-
-
-        if ($donnees2['choix']=='pizza'){
-
-?>
 
                 <div id=Option1>
                         <div id=bouton1 onclick="self.location.href='pizza.php'">
                                 Pizza
                         </div>
-                </div>
-                <div id=Option2b>
-                        <div id=bouton2b onclick="self.location.href='affichComm.php'">
-                                Visualiser ma commande
-                        </div>
-                </div>
+		</div>
         </div>
-<?php
-	}
-
-/*---------------------------------------------
-        Si choix burger
------------------------------------------------*/
-
-
-        if ($donnees2['choix']=='burger'){
-
-?>
-
-                <div id=Option1>
+	<div id=MenuP> 
+		<div id=Option1>
                         <div id=bouton1 onclick="self.location.href='burger.php'">
                                 burger
                         </div>
                 </div>
-                <div id=Option2b>
+                <div id=Option1>
                         <div id=bouton2b onclick="self.location.href='affichComm.php'">
                                 Visualiser ma commande
                         </div>
                 </div>
         </div>
-<?php
-        }
-
-/* ---------------------------------------------
-	si aucun choix
------------------------------------------------*/
-
-
-        if ($donnees2['choix']==''){
-
-?>
-
-              <b>  aucun type de commande a été selectionnée veuillez nous contacter !</b>
-	</div>
-                
-<?php
-        }
-?>
-
-
 
 	<?php
 		/*-----------------------------------------------------------------
@@ -205,11 +188,25 @@ if ($donnees1['nb1']==1) {
 	$donnee2 = $connection2->fetch();
 	if ($donnee2['admin']==1) {
 	?>
-	<div id=MenuA>
-		<div id=Option3>
-			<div id=bouton1 onclick="javascript:window.open('pdf.php')">
+        <div id=MenuA>
+                <div id=Option3>
+                        <div id=bouton1 onclick="javascript:window.open('pdfSub.php')">
 
-				Impression PDF
+                                Impression SUB
+                        </div>
+                </div>
+                <div id=Option4>
+			<div id=bouton1 onclick="javascript:window.open('pdfPiz.php')">
+                               Impression Pizza
+                        </div>
+                </div>
+        </div>
+
+	<div id=MenuP>
+		<div id=Option3>
+			<div id=bouton1 onclick="javascript:window.open('pdfBur.php')">
+
+				Impression Burger
 			</div> 
 		</div>
 		<div id=Option4>

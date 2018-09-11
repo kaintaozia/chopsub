@@ -38,6 +38,7 @@ if ($donnees1['nb1']==1) {
 <div id=header>
         <div id=typecom>
         <?php
+	/*
                 $connection->closeCursor();
                 $connection3 = $bdd->query("SELECT * FROM choix;");
                 $donnee3 = $connection3->fetch();
@@ -52,6 +53,7 @@ if ($donnees1['nb1']==1) {
                 echo "<div id=resultat>";
                 echo $donnee3['jour'];
                 echo "</div>";
+	*/
         ?>
         </div>
 	<div id=banniere>
