@@ -147,7 +147,7 @@ Si pas de commande
                         </div>
 
                         <div id=col1>
-                               <b>Everest :</b> Pain brioché, steak 185g charolais, rosti, oigons rouges, salade, roblochon
+                               <b>Everest :</b> Pain brioché, steak 185g charolais, rosti, oignons rouges, salade, roblochon
                         </div>
                         <div id=col2>
                                 9 €
@@ -175,7 +175,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Parrain" />
                         </div>
                         <div id=col1>
-                               <b>Parrain : </b> Pain brioché, steak 165g charolais, bacon, tomcates, oigons rouges, salade, fromade de chevres, moutarde au miel
+                               <b>Parrain : </b> Pain brioché, steak 165g charolais, bacon, tomcates, oignons rouges, salade, fromade de chevres, moutarde au miel
                         </div>
                         <div id=col2>
                                 9 €
@@ -189,7 +189,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Big Veggie" />
                         </div>
                         <div id=col1>
-                              <b>  Big Veggie :</b> Pain brioché, burger végétarien, salade, tomcate, oigons rouges, cheddar, ketchup, moutarde 
+                              <b>  Big Veggie :</b> Pain brioché, burger végétarien, salade, tomcate, oignons rouges, cheddar, ketchup, moutarde 
                         </div>
                         <div id=col2>
                                 8 €
@@ -217,7 +217,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Tommy gun"/>
                         </div>
                         <div id=col1>
-                              <b> Tommy gun :</b> Pain brioché, steak 165g charolais,  salade, tomate, oigons rouges, sauce burger, cheddar, cornichons
+                              <b> Tommy gun :</b> Pain brioché, steak 165g charolais,  salade, tomate, oignons rouges, sauce burger, cheddar, cornichons
                         </div>
                         <div id=col2>
                                 8 €
@@ -231,7 +231,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Marshall" />
                         </div>
                         <div id=col1>
-                              <b>  Marshall :</b> Pain maîs, steak 165g angus,  salade, tomate, oigons rouges, sauce BBQ, cheddar
+                              <b>  Marshall :</b> Pain maîs, steak 165g angus,  salade, tomate, oignons rouges, sauce BBQ, cheddar
                         </div>
                         <div id=col2>
                                 8 €
@@ -245,7 +245,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Smokey Joe" />
                         </div>
                         <div id=col1>
-                              <b>  Smokey Joe :</b> pain brioché, steak 165g angus,  oigons rouges, bacon, sauce BBQ, cheddar fumé
+                              <b>  Smokey Joe :</b> pain brioché, steak 165g angus,  oignons rouges, bacon, sauce BBQ, cheddar fumé
                         </div>
                         <div id=col2>
                                 8 €
@@ -259,7 +259,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Colorado" />
                         </div>
                         <div id=col1>
-                              <b>  Colorado :</b> pain mais, steak 165g charolais,  oigons fris, cheddar fumé, ketchup, moutarde
+                              <b>  Colorado :</b> pain mais, steak 165g charolais,  oignons fris, cheddar fumé, ketchup, moutarde
                         </div>
                         <div id=col2>
                                 7 €
@@ -274,7 +274,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Chickito" />
                         </div>
                         <div id=col1>
-                              <b>  Chickito :</b> Petit pain brioché, burger de poulet pané au céréales 125g,tomcate, salade, oigons rouges, sauce BBQ, cheddar
+                              <b>  Chickito :</b> Petit pain brioché, burger de poulet pané au céréales 125g,tomcate, salade, oignons rouges, sauce BBQ, cheddar
                         </div>
                         <div id=col2>
                                 6 €
@@ -289,7 +289,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Le Gandhi" />
                         </div>
                         <div id=col1>
-                              <b>  Le Gandhi :</b> Petit pain brioché, aiguilettes de poulet tika,salade, oigons fris, sauce curry, cheddar
+                              <b>  Le Gandhi :</b> Petit pain brioché, aiguilettes de poulet tika,salade, oignons fris, sauce curry, cheddar
                         </div>
                         <div id=col2>
                                 5 €

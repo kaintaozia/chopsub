@@ -164,7 +164,7 @@ Si pas de commande
                                 <input type="radio" name="pizza" value="bolognaise" id="Complet" />
                                 </div>
                                 <div class=TitreP1>
-                                <b>Bolognaise</b> (sauce tomate, mozzarella, oigons, boeuf, crème fraiche, herbes de provence)
+                                <b>Bolognaise</b> (sauce tomate, mozzarella, oignons, boeuf, crème fraiche, herbes de provence)
                                 </div>
                         </div>
                 </div>
@@ -176,7 +176,7 @@ Si pas de commande
                                 <input type="radio" name="pizza" value="végétarienne" id="Complet" />
                                 </div>
                                 <div class=TitreP1>
-                                <b>Végétarienne</b> (sauce tomate, mozzarella, oigons, poivrons, tomates fraiches, origan)
+                                <b>Végétarienne</b> (sauce tomate, mozzarella, oignons, poivrons, tomates fraiches, origan)
                                 </div>
                         </div>
                 </div>
@@ -192,7 +192,7 @@ Si pas de commande
                                 <input type="radio" name="pizza" value="Chicago Groove" id="Complet" />
                                 </div>
 				<div class=TitreP1>
-				<b> Chicago Groove</b> (crème, mozzarella, oigons, poulet, lardon, fourme d'ambert)
+				<b> Chicago Groove</b> (crème, mozzarella, oignons, poulet, lardon, fourme d'ambert)
                                 </div>
                         </div>
                 </div>
@@ -203,7 +203,7 @@ Si pas de commande
                                 <input type="radio" name="pizza" value="Chicago Breakfast" id="Complet" />
                                 </div>
                                 <div class=TitreP1>
-                                <b> Chicago Breakfast</b> (crème, mozzarella, oigons, poulet, bacon, sauce barbexue)
+                                <b> Chicago Breakfast</b> (crème, mozzarella, oignons, poulet, bacon, sauce BBQ)
                                 </div>
                         </div>
                 </div>
@@ -214,7 +214,7 @@ Si pas de commande
                                 <input type="radio" name="pizza" value="Addranchie" id="Complet" />
                                 </div>
                                 <div class=TitreP1>
-                                <b>Affranchie</b> (sauce BBQ, mozzarella, oigon, merguez, poulet, cheddar )
+                                <b>Affranchie</b> (sauce BBQ, mozzarella, oignon, merguez, poulet, cheddar )
                                 </div>
                         </div>
                 </div>
@@ -247,7 +247,7 @@ Si pas de commande
                                 <input type="radio" name="pizza" value="Chicago Burger" id="Complet" />
                                 </div>
                                 <div class=TitreP1>
-                                <b>Chicago Burger</b> (sauce tomate, mozzarella, oigons, boeuf, cheddar, sauce burger)
+                                <b>Chicago Burger</b> (sauce tomate, mozzarella, oignons, boeuf, cheddar, sauce burger)
                                 </div>
                         </div>
                 </div>
