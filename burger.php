@@ -131,7 +131,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Tony Montagnard" />
                         </div>
 			<div id=col1>
-				<b>Tony Montagnard : </b>Pain maîs, steak 165g charolais, bacon, salade,oigon fris, roblochon
+				<b>Tony Montagnard : </b>Pain maîs, steak 165g charolais, bacon, salade,oignons frits, roblochon
 			</div>
 			<div id=col2>
 				9 €
@@ -161,7 +161,7 @@ Si pas de commande
                                 <input type="radio" name="burger" value="Repenti" />
                         </div>
                         <div id=col1>
-                                <b>Repenti : </b>Pain brioché, steak 165g, charolais, rosti, oignons rouges, bacon, cheddar fumé, kétchup, moutarde
+                                <b>Repenti : </b>Pain brioché, steak 165g, charolais, rosti, oignons rouges, bacon, cheddar fumé, ketchup, moutarde
                         </div>
                         <div id=col2>
                                 9 €
