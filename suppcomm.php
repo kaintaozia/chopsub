@@ -1,5 +1,5 @@
 <?php 
-header ("Refresh: 3;URL=identification.php");
+header ("Refresh: 2;URL=identification.php");
 // Redirection vers page_suivante.php après un délai de 5 secondes
 // durant lesquelles la page actuelle (page_premiere.php, par exemple) est affichée
 ?>
@@ -35,6 +35,7 @@ if ($donnees1['nb1']==1) {
 
         <div id=typecom>
         <?php
+	/*
                 $connection->closeCursor();
                 $connection3 = $bdd->query("SELECT * FROM choix;");
                 $donnee3 = $connection3->fetch();
@@ -49,6 +50,7 @@ if ($donnees1['nb1']==1) {
                 echo "<div id=resultat>";
                 echo $donnee3['jour'];
                 echo "</div>";
+	*/
         ?>
         </div>
 
@@ -81,7 +83,7 @@ if ($donnees1['nb1']==1) {
 <div id=page>
 
 <div id=text>
-	Votre commande vient d'être supprimée, vous allez être redirigé dans 5 secondes
+	Votre commande vient d'être supprimée, vous allez être redirigé dans 2 secondes
 	<?php 
 	$menu1 = $bdd->query("delete FROM subway where nom='".$login."'");
 	$menu2 = $bdd->query("delete from commande where id='".$login."'");
