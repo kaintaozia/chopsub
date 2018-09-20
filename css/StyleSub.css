@@ -1,0 +1,500 @@
+/**************************************************
+Style page global
+**************************************************/
+
+div#page {
+ 
+	width: 800px;
+	height: auto;
+	background-color: #228751; 
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin: auto;
+	border-radius: 10px; 
+ }
+div.titre {
+	width: 250px;
+	height: 20px;
+	padding-bottom: 10px; 
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+/*-----------------------------------
+----------  PAIN 1 -------------------
+-----------------------------------*/
+div#pain {
+	width: 650px;
+	height: 100px;
+	margin: auto;
+	text-align: left;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+div.PainL1 {
+	width: 650px;
+	height: 30px;
+	padding-left: 50px;
+ }
+
+div.P1 {
+	width: 110px;
+	text-align: left;
+	float: left;
+	padding-left: 20px;
+}
+
+div.CocheP1 {
+	width: 20px;
+	text-align: left;
+	float: left;
+}
+
+div.TitreP1 {
+	width: 70px;
+	text-align: left;
+	float: left;
+}
+/*-----------------------------------
+----------  TAILLE  -----------------
+-----------------------------------*/
+div#Taille {
+	width: 650px;
+	height: 40px;
+	margin: auto;
+	text-align: left;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	margin-top: 20px;
+}
+div#titreTaille {
+	width: 160px;
+	height: 30px;
+	padding-bottom: 10px; 
+	padding-top: 7px;
+	padding-left: 5px;
+	float: left;
+}
+
+div#TailleL1 {
+	width: 200px;
+	height: 30px;
+	padding-bottom: 10px; 
+	padding-left: 5px;
+	padding-top: 5px;
+	float: left;
+ }
+
+/*-----------------------------------
+----------  VIANDE  -----------------
+-----------------------------------*/
+div#Viande {
+	width: 650px;
+	height: 550px;
+	margin: auto;
+	text-align: left;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	margin-top: 20px;
+}
+
+div.ViandeL1 {
+	width: 600px;
+	height: 40px;
+	padding-left: 50px;
+ }
+
+div.TypeV1{
+	width: 100px;
+	text-align: left;
+	float: left;
+}
+
+div.V1 {
+	width: 160px;
+	text-align: left;
+	float: left;
+	padding-left: 20px;
+}
+
+div.CocheV1 {
+	width: 20px;
+	text-align: left;
+	float: left;
+}
+
+div.TitreV1 {
+	width: 80px;
+	text-align: left;
+	float: left;
+}
+
+div.V2 {
+	width: 220px;
+	text-align: left;
+	float: left;
+	padding-left: 20px;
+}
+
+div.CocheV2 {
+	width: 20px;
+	text-align: left;
+	float: left;
+}
+
+div.TitreV2 {
+	width: 140px;
+	text-align: left;
+	float: left;
+}
+div.ViandeL2 {
+	width: 600px;
+	height: 40px;
+	padding-left: 150px;
+ }
+
+div.ViandeL3 {
+	width: 600px;
+	height: 30px;
+	padding-left: 50px;
+ }
+div.TypeV3{
+	width: 250px;
+	text-align: left;
+	float: left;
+}
+
+div.V3 {
+	width: 400px;
+	text-align: left;
+	float: left;
+	padding-left: 120px;
+}
+
+div.CocheV3 {
+	width: 20px;
+	text-align: left;
+	float: left;
+}
+
+div.TitreV3 {
+	width: 280px;
+	text-align: left;
+	float: left;
+}
+div.prix {
+	width: 55px;
+	text-align: right;
+	float: left;
+}
+
+
+/*-----------------------------------
+---------- FROMAGE   ----------------
+-----------------------------------*/
+div#Fromage {
+	width: 650px;
+	height: 40px;
+	margin: auto;
+	text-align: left;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	margin-top: 20px;
+}
+div#titreFromage {
+	width: 150px;
+	height: 30px;
+	padding-bottom: 10px; 
+	padding-top: 7px;
+	padding-left: 5px;
+	float: left;
+}
+
+div#FromageL1 {
+	width: 200px;
+	height: 30px;
+	padding-bottom: 10px; 
+	padding-left: 5px;
+	padding-top: 5px;
+	float: left;
+ }
+
+/*-----------------------------------
+---------- FROMAGE   ----------------
+-----------------------------------*/
+div#Temperature {
+	width: 650px;
+	height: 40px;
+	margin: auto;
+	text-align: left;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	margin-top: 20px;
+}
+div#titreTempe {
+	width: 150px;
+	height: 30px;
+	padding-bottom: 10px; 
+	padding-top: 7px;
+	padding-left: 5px;
+	float: left;
+}
+
+div#TemperatureL1 {
+	width: 200px;
+	height: 30px;
+	padding-bottom: 10px; 
+	padding-left: 5px;
+	padding-top: 5px;
+	float: left;
+ }
+/*-----------------------------------
+---------- LEGUMES  -----------------
+-----------------------------------*/
+div#legume {
+	width: 650px;
+	height: 125px;
+	margin: auto;
+	text-align: left;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	margin-top: 20px;
+}
+
+div.legumeL1 {
+	width: 600px;
+	height: 30px;
+	padding-left: 50px;
+ }
+
+div.LegumeP1 {
+	width: 100px;
+	text-align: left;
+	float: left;
+	padding-left: 20px;
+}
+
+div.CocheLeg1 {
+	width: 20px;
+	text-align: left;
+	float: left;
+}
+
+div.TitreLeg1 {
+	width: 70px;
+	text-align: left;
+	float: left;
+}
+/*-----------------------------------
+---------- SAUCES  -----------------
+-----------------------------------*/
+div#Sauce {
+	width: 650px;
+	height: 150px;
+	margin: auto;
+	text-align: left;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	margin-top: 20px;
+}
+
+div.SauceL1 {
+	width: 700px;
+	height: 30px;
+	padding-left: 50px;
+ }
+
+div.SauceP1 {
+	width: 1É0px;
+	text-align: left;
+	float: left;
+	padding-left: 20px;
+}
+
+div.CocheS1 {
+	width: 20px;
+	text-align: left;
+	float: left;
+}
+
+div.TitreS1 {
+	width: 110px;
+	text-align: left;
+	float: left;
+}
+div.SauceP2 {
+	width: 130px;
+	height: auto;
+	text-align: left;
+	float: left;
+	padding-left: 20px;
+}
+
+div.CocheS2 {
+	width: 20px;
+	text-align: left;
+	float: left;
+}
+
+div.TitreS2 {
+	width: 110px;
+	text-align: left;
+	float: left;
+}
+
+/*-----------------------------------
+---------- PIED DE PAGE  ------------
+-----------------------------------*/
+div#footer {
+	width: 800px;	
+	height: 70px;
+	text-align: center;
+	margin: auto;
+	padding-top: 20px;
+	padding-left: 240px;
+}
+div#bouton1 {
+	font-family: Arial,sans-serif;
+	float: left;
+	font-size: 1.0em;
+	width: 150px;
+	height: 30px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin: auto;
+	margin-right: 20px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #00B454, #007536);
+	background:    -moz-linear-gradient( #00B454, #007536);
+	background:     -ms-linear-gradient( #00B454, #007536);
+	background:      -o-linear-gradient( #00B454, #007536);
+	background:         linear-gradient( #00B454, #007536);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+div#bouton1:active {
+	font-family: Arial,sans-serif;
+	float: left;
+	font-size: 1.0em;
+	width: 150px;
+	height: 30px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin: auto;
+	margin-right: 20px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #02A458, #2C2C2C);
+	background:    -moz-linear-gradient( #02A458, #2C2C2C);
+	background:     -ms-linear-gradient( #02A458, #2C2C2C);
+	background:      -o-linear-gradient( #02A458, #2C2C2C);
+	background:         linear-gradient( #02A458, #2C2C2C);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
+}
+#boutonV {
+	text-decoration: none;
+	border: 0px;
+	font-family: Arial,sans-serif;
+	float: left;
+	font-size: 1.0em;
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	margin: auto;
+	margin-right: 20px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #00B454, #007536);
+	background:    -moz-linear-gradient( #00B454, #007536);
+	background:     -ms-linear-gradient( #00B454, #007536);
+	background:      -o-linear-gradient( #00B454, #007536);
+	background:         linear-gradient( #00B454, #007536);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+
+#boutonV:active {
+	text-decoration: none;
+	border: 0px;
+	font-family: Arial,sans-serif;
+	float: left;
+	font-size: 1.0em;
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	margin: auto;
+	margin-right: 20px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #02A458, #2C2C2C);
+	background:    -moz-linear-gradient( #02A458, #2C2C2C);
+	background:     -ms-linear-gradient( #02A458, #2C2C2C);
+	background:      -o-linear-gradient( #02A458, #2C2C2C);
+	background:         linear-gradient( #02A458, #2C2C2C);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
+}
+
+div#boutonErr {
+	font-family: Arial,sans-serif;
+	font-size: 0.8em;
+	width: 110px;
+	height: 30px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #00B454, #007536);
+	background:    -moz-linear-gradient( #00B454, #007536);
+	background:     -ms-linear-gradient( #00B454, #007536);
+	background:      -o-linear-gradient( #00B454, #007536);
+	background:         linear-gradient( #00B454, #007536);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+
+div#boutonErr:active {
+	font-family: Arial,sans-serif;
+	font-size: 0.8em;
+	width: 110px;
+	height: 30px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #02A458, #2C2C2C);
+	background:    -moz-linear-gradient( #02A458, #2C2C2C);
+	background:     -ms-linear-gradient( #02A458, #2C2C2C);
+	background:      -o-linear-gradient( #02A458, #2C2C2C);
+	background:         linear-gradient( #02A458, #2C2C2C);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
+}
+div#text {
+	font-size: 1.2em;
+}
+

@@ -2,40 +2,62 @@
 entete de la page
 ******************************************/
 div#header {
-	width: 800px;	
-	height: 176px;
-	background-color: black; 
-	margin: auto;
-	text-align: center;
+        width: 800px;
+        height: 176px;
+/*      background-color: black; */
+        margin: auto;
+        text-align: center;
+        border-style: groove;
+        border-width: 3px;
+        border-radius: 10px;
 } 
+
 div#banniere {
-	width: 650px;	
-	height: 170px;
-	background-color: black; 
-	text-align: left;
-	margin: auto;
-	float: left;
+
+        width: 500px;
+        height: 170px;
+/*      background-color: black; */
+/*      text-align: left; */
+        margin: auto;
+        float: left;
 }
 
 div#connexion {
-	width: 150px;	
-	height: 45px;
-	background-color: black; 
-	text-align: center;
-	margin: auto;
-	float: right;
-	color: white;
-	padding-top: 40px;
+        width: 150px;
+        height: 45px;
+/*      background-color: black; */
+        text-align: center;
+        margin: auto;
+        float: right;
+        color: black;
+        padding-top: 40px;
 }
+
+div#typecom {
+        width: 150px;
+        height: 45px;
+/*      background-color: black; */
+        text-align: center;
+        margin: auto;
+        float: left;
+        color: black;
+        padding-top: 40px;
+        Font-Weight: Bold;
+}
+
+div#resultat {
+	Font-Weight: Lighter;
+}
+
 div#deco {
 	width: 150px;	
 	height: 87px;
-	background-color: black; 
+/*	background-color: black; */
 	text-align: center;
 	margin: auto;
 	float: right;
 	color: white;
- }
+}
 
 div#boutonD {
 	font-family: Arial,sans-serif;
@@ -94,341 +116,82 @@ div#page {
 	border-radius: 10px; 
  }
 div.titre {
-	width: 200px;
+	width: 350px;
 	height: 20px;
 	padding-bottom: 10px; 
 	padding-top: 5px;
 	padding-left: 5px;
 }
 
-/*-----------------------------------
-----------  PAIN 1 -------------------
------------------------------------*/
-div#pain {
-	width: 650px;
-	height: 100px;
+
+
+/**************************************************
+Style page burger
+**************************************************/
+div#burger{
+	width: 780px;
+        height: auto;
 	margin: auto;
-	text-align: left;
+ 	padding-top: 5px;
 	border-width: 2px;
-	border-style: solid;
-	border-color: black;
+        border-style: solid;
+        border-color: black;
 }
 
-div.PainL1 {
-	width: 650px;
-	height: 30px;
-	padding-left: 50px;
- }
+div#ligne1{
+	width: 780px;
+        height: 35px;
+	padding-bottom: 10px;
+}
 
-div.P1 {
-	width: 110px;
-	text-align: left;
+div#titre1 {
+	width: 580px;
+        height: auto;
+        float: left;
+}
+
+
+div.CocheP1{
+	width: 30px;
+        height: auto;
+        float: left;
+}
+div#col1{
+	width: 550px;
+        height: auto;
 	float: left;
-	padding-left: 20px;
+	text-align: left
 }
-
-div.CocheP1 {
-	width: 20px;
-	text-align: left;
-	float: left;
-}
-
-div.TitreP1 {
-	width: 70px;
-	text-align: left;
-	float: left;
-}
-/*-----------------------------------
-----------  TAILLE  -----------------
------------------------------------*/
-div#Taille {
-	width: 650px;
-	height: 40px;
-	margin: auto;
-	text-align: left;
-	border-width: 2px;
-	border-style: solid;
-	border-color: black;
-	margin-top: 20px;
-}
-div#titreTaille {
-	width: 160px;
-	height: 30px;
-	padding-bottom: 10px; 
-	padding-top: 7px;
-	padding-left: 5px;
-	float: left;
-}
-
-div#TailleL1 {
-	width: 200px;
-	height: 30px;
-	padding-bottom: 10px; 
-	padding-left: 5px;
-	padding-top: 5px;
-	float: left;
- }
-
-/*-----------------------------------
-----------  VIANDE  -----------------
------------------------------------*/
-div#Viande {
-	width: 650px;
-	height: 550px;
-	margin: auto;
-	text-align: left;
-	border-width: 2px;
-	border-style: solid;
-	border-color: black;
-	margin-top: 20px;
-}
-
-div.ViandeL1 {
-	width: 600px;
-	height: 40px;
-	padding-left: 50px;
- }
-
-div.TypeV1{
+div#col2{
 	width: 100px;
-	text-align: left;
+        height: auto;
 	float: left;
 }
 
-div.V1 {
-	width: 160px;
-	text-align: left;
-	float: left;
-	padding-left: 20px;
-}
-
-div.CocheV1 {
-	width: 20px;
-	text-align: left;
-	float: left;
-}
-
-div.TitreV1 {
-	width: 80px;
-	text-align: left;
-	float: left;
-}
-
-div.V2 {
-	width: 220px;
-	text-align: left;
-	float: left;
-	padding-left: 20px;
-}
-
-div.CocheV2 {
-	width: 20px;
-	text-align: left;
-	float: left;
-}
-
-div.TitreV2 {
-	width: 140px;
-	text-align: left;
-	float: left;
-}
-div.ViandeL2 {
-	width: 600px;
-	height: 40px;
-	padding-left: 150px;
- }
-
-div.ViandeL3 {
-	width: 600px;
-	height: 30px;
-	padding-left: 50px;
- }
-div.TypeV3{
-	width: 250px;
-	text-align: left;
-	float: left;
-}
-
-div.V3 {
-	width: 400px;
-	text-align: left;
-	float: left;
-	padding-left: 120px;
-}
-
-div.CocheV3 {
-	width: 20px;
-	text-align: left;
-	float: left;
-}
-
-div.TitreV3 {
-	width: 280px;
-	text-align: left;
-	float: left;
-}
-div.prix {
-	width: 55px;
-	text-align: right;
-	float: left;
-}
-
-
-/*-----------------------------------
----------- FROMAGE   ----------------
------------------------------------*/
-div#Fromage {
-	width: 650px;
-	height: 40px;
-	margin: auto;
-	text-align: left;
-	border-width: 2px;
-	border-style: solid;
-	border-color: black;
-	margin-top: 20px;
-}
-div#titreFromage {
-	width: 150px;
-	height: 30px;
-	padding-bottom: 10px; 
-	padding-top: 7px;
-	padding-left: 5px;
-	float: left;
-}
-
-div#FromageL1 {
-	width: 200px;
-	height: 30px;
-	padding-bottom: 10px; 
-	padding-left: 5px;
-	padding-top: 5px;
-	float: left;
- }
-
-/*-----------------------------------
----------- FROMAGE   ----------------
------------------------------------*/
-div#Temperature {
-	width: 650px;
-	height: 40px;
-	margin: auto;
-	text-align: left;
-	border-width: 2px;
-	border-style: solid;
-	border-color: black;
-	margin-top: 20px;
-}
-div#titreTempe {
-	width: 150px;
-	height: 30px;
-	padding-bottom: 10px; 
-	padding-top: 7px;
-	padding-left: 5px;
-	float: left;
-}
-
-div#TemperatureL1 {
-	width: 200px;
-	height: 30px;
-	padding-bottom: 10px; 
-	padding-left: 5px;
-	padding-top: 5px;
-	float: left;
- }
-/*-----------------------------------
----------- LEGUMES  -----------------
------------------------------------*/
-div#legume {
-	width: 650px;
-	height: 125px;
-	margin: auto;
-	text-align: left;
-	border-width: 2px;
-	border-style: solid;
-	border-color: black;
-	margin-top: 20px;
-}
-
-div.legumeL1 {
-	width: 600px;
-	height: 30px;
-	padding-left: 50px;
- }
-
-div.LegumeP1 {
+div#col3{
 	width: 100px;
-	text-align: left;
-	float: left;
-	padding-left: 20px;
-}
-
-div.CocheLeg1 {
-	width: 20px;
-	text-align: left;
+        height: auto;
 	float: left;
 }
 
-div.TitreLeg1 {
-	width: 70px;
-	text-align: left;
-	float: left;
-}
-/*-----------------------------------
----------- SAUCES  -----------------
------------------------------------*/
-div#Sauce {
-	width: 650px;
-	height: 150px;
-	margin: auto;
-	text-align: left;
-	border-width: 2px;
-	border-style: solid;
-	border-color: black;
-	margin-top: 20px;
+/**************************************************
+Style page formule
+**************************************************/
+
+div#formule{
+        width: 780px;
+        height: 35px;
+        margin: auto;
+        padding-top: 10px;
+	margin-top: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
 }
 
-div.SauceL1 {
-	width: 700px;
-	height: 30px;
-	padding-left: 50px;
- }
-
-div.SauceP1 {
-	width: 1É0px;
-	text-align: left;
-	float: left;
-	padding-left: 20px;
-}
-
-div.CocheS1 {
-	width: 20px;
-	text-align: left;
-	float: left;
-}
-
-div.TitreS1 {
-	width: 110px;
-	text-align: left;
-	float: left;
-}
-div.SauceP2 {
-	width: 130px;
-	height: auto;
-	text-align: left;
-	float: left;
-	padding-left: 20px;
-}
-
-div.CocheS2 {
-	width: 20px;
-	text-align: left;
-	float: left;
-}
-
-div.TitreS2 {
-	width: 110px;
-	text-align: left;
-	float: left;
+div#titre2 {
+        width: 780px;
+        height: 35px;
 }
 
 /*-----------------------------------

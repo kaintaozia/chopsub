@@ -5,7 +5,8 @@ include "connexion.php";
 $bdd = connexion();
 ?>
 <head>
-	<link href="../chopsub/css/StyleComm.css" rel="stylesheet" media="all" type="text/css">
+	<link href="./css/StyleSub.css" rel="stylesheet" media="all" type="text/css">
+	<link href="./css/baniere.css" rel="stylesheet" media="all" type="text/css">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
 
@@ -35,6 +36,29 @@ Si login OK
 if ($donnees1['nb1']==1) {
 	?>
 <div id=header>
+
+        <div id=typecom>
+        <?php
+	/*
+                $connection->closeCursor();
+                $connection3 = $bdd->query("SELECT * FROM choix;");
+                $donnee3 = $connection3->fetch();
+                echo "Commande :";
+                echo "</br>";
+                echo "<div id=resultat>";
+                echo $donnee3['choix'];
+                echo "</div>";
+                echo "</br>";
+                echo "Selectionné le ";
+                echo "</br>";
+                echo "<div id=resultat>";
+                echo $donnee3['jour'];
+                echo "</div>"; 
+	*/
+        ?>
+        </div>
+
+
 	<div id=banniere>
 		<img src="images/banniere.jpg" />
 	</div>
@@ -49,8 +73,8 @@ if ($donnees1['nb1']==1) {
 	?>
 	</div>
 	<div id=deco>
-			<div id=boutonD onclick="self.location.href='deconnexion.php'">
-				deconnexion	
+			<div id=boutonDH onclick="self.location.href='deconnexion.php'">
+				déconnexion	
 			</div>
 	</div>
 </div>
@@ -61,7 +85,7 @@ $connection->closeCursor();
 /********************************************************
 si commande deja passe
 ********************************************************/
-$menu1 = $bdd->query("select count(*) as com from commande where nom='".$login."'");
+$menu1 = $bdd->query("select count(*) as com from commande where id ='".$login."'");
 $donnees1 = $menu1->fetch();
 if ($donnees1['com']!=0) {
 	?>	
@@ -84,7 +108,7 @@ Si pas de commande
 ?>
 <div id=page>
         <div id=formulaire>
-        <form action="verifCommande.php" method="post">
+        <form action="verifSubway.php" method="post">
 	<div id=pain>		
 		<div class=titre>
 			<b>1 -  Choix du pain : </b>
@@ -116,7 +140,7 @@ Si pas de commande
 			</div>
 			<div class=P1>
 				<div class=CocheP1>
-				<input type="radio" name="pain" value="P.Origan" id="P.Origan" />
+				<input type="radio" name="pain" value="Parmesan Origan" id="P.Origan" />
 				</div>
 				<div class=TitreP1>
 				Parmesan/Origan
@@ -173,7 +197,7 @@ Si pas de commande
 	</div>
 	<div id=Viande>
 		<div class=titre>
-			<b>3 - Choix de la viande </b>
+			<b>3 - Choix de la viande : 15 / 30 cm</b>
 		</div>
 		<div class=ViandeL1>
 			<div class=TypeV1>
@@ -585,7 +609,7 @@ Si pas de commande
 	<div id=footer>
 
 			<div id=bouton1 onclick="self.location.href='identification.php'">
-				ANNULE
+				ANNULER
 			</div>
 		        <input type="submit" value="VALIDER" id="boutonV">
 	</div>

@@ -1,38 +1,189 @@
-div#header {
-	width: 800px;	
-	height: 176px;
-	background-color: black; 
-	margin: auto;
-	text-align: center;
-} 
-div#banniere {
-	width: 650px;	
-	height: 170px;
-	background-color: black; 
-	text-align: left;
-	margin: auto;
-	float: left;
+/*-------------------------------------------------
+		Menu choix
+-------------------------------------------------*/
+
+ div#menu {
+ width: 800px;
+ height: 30px;
+/* background-color: #228751;*/
+ padding-top: 10px;
+ margin: auto;
+ padding-bottom: 10px;
+ border-radius: 10px;
+ text-align: center;
+ border-width: 3px;
+ border-style: groove;
+ }
+
+ div#menuTitre {
+ width: 800px;
+ height: 15px;
+/* background-color: #228751;*/
+ padding-top: 10px;
+ margin: auto;
+ padding-bottom: 3px;
+ border-radius: 10px;
+ text-align: center;
+ border-width: 3px;
+ }
+
+
+ div#type1 {
+	width: 140px;
+        height: 30px;
+        float: left;
+	margin-left: 100px;
+ }
+#choix1 {
+	text-decoration: none;
+	border: 0px;
+        font-family: Arial,sans-serif;
+        font-size: 1em;
+        width: 100px;
+        height: 25px;
+        padding-top: 5px;
+        cursor: pointer;
+        margin: auto;
+        text-align: center;
+        color: black;
+        background: #007536;
+        border-radius: 8px;
+        background: -webkit-linear-gradient( #00B454, #007536);
+        background:    -moz-linear-gradient( #00B454, #007536);
+        background:     -ms-linear-gradient( #00B454, #007536);
+        background:      -o-linear-gradient( #00B454, #007536);
+        background:         linear-gradient( #00B454, #007536);
+        text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+#choix1:active {
+	text-decoration: none;
+	border: 0px;
+        font-family: Arial,sans-serif;
+        font-size: 1em;
+        width: 100px;
+        height: 25px;
+        padding-top: 5px;
+        cursor: pointer;
+        text-align: center;
+        color: ##02A458;
+        background: #02A458;
+        margin: auto;
+        border-radius: 8px;
+        background: -webkit-linear-gradient( #02A458, #2C2C2C);
+        background:    -moz-linear-gradient( #02A458, #2C2C2C);
+        background:     -ms-linear-gradient( #02A458, #2C2C2C);
+        background:      -o-linear-gradient( #02A458, #2C2C2C);
+        background:         linear-gradient( #02A458, #2C2C2C);
+        text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+        box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+}
+ div#type2 {
+        width: 110px;
+        height: 30px;
+        float: left;
+        margin-left: 100px;
+ }
+#choix2 {
+        text-decoration: none;
+        border: 0px;
+        font-family: Arial,sans-serif;
+        font-size: 1em;
+        width: 100px;
+        height: 25px;
+        padding-top: 5px;
+        cursor: pointer;
+        margin: auto;
+        text-align: center;
+        color: black;
+        background: #007536;
+        border-radius: 8px;
+        background: -webkit-linear-gradient( #00B454, #007536);
+        background:    -moz-linear-gradient( #00B454, #007536);
+        background:     -ms-linear-gradient( #00B454, #007536);
+        background:      -o-linear-gradient( #00B454, #007536);
+        background:         linear-gradient( #00B454, #007536);
+        text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+choix2:active {
+        text-decoration: none;
+        border: 0px;
+        font-family: Arial,sans-serif;
+        font-size: 1em;
+        width: 100px;
+        height: 25px;
+        padding-top: 5px;
+        cursor: pointer;
+        text-align: center;
+        color: ##02A458;
+        background: #02A458;
+        margin: auto;
+        border-radius: 8px;
+        background: -webkit-linear-gradient( #02A458, #2C2C2C);
+        background:    -moz-linear-gradient( #02A458, #2C2C2C);
+        background:     -ms-linear-gradient( #02A458, #2C2C2C);
+        background:      -o-linear-gradient( #02A458, #2C2C2C);
+        background:         linear-gradient( #02A458, #2C2C2C);
+        text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+        box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
 }
 
-div#connexion {
-	width: 150px;	
-	height: 45px;
-	background-color: black; 
-	text-align: center;
-	margin: auto;
-	float: right;
-	color: white;
-	padding-top: 40px;
-}
-div#deco {
-	width: 150px;	
-	height: 87px;
-	background-color: black; 
-	text-align: center;
-	margin: auto;
-	float: right;
-	color: white;
+ div#type3 {
+        width: 110px;
+        height: 30px;
+        float: left;
+        margin-left: 100px;
  }
+ 
+#choix3 {
+        text-decoration: none;
+        border: 0px;
+        font-family: Arial,sans-serif;
+        font-size: 1em;
+        width: 100px;
+        height: 25px;
+        padding-top: 5px;
+        cursor: pointer;
+        margin: auto;
+        text-align: center;
+        color: black;
+        background: #007536;
+        border-radius: 8px;
+        background: -webkit-linear-gradient( #00B454, #007536);
+        background:    -moz-linear-gradient( #00B454, #007536);
+        background:     -ms-linear-gradient( #00B454, #007536);
+        background:      -o-linear-gradient( #00B454, #007536);
+        background:         linear-gradient( #00B454, #007536);
+        text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+#choix3:active {
+        text-decoration: none;
+        border: 0px;
+        font-family: Arial,sans-serif;
+        font-size: 1em;
+        width: 100px;
+        height: 25px;
+        padding-top: 5px;
+        cursor: pointer;
+        text-align: center;
+        color: ##02A458;
+        background: #02A458;
+        margin: auto;
+        border-radius: 8px;
+        background: -webkit-linear-gradient( #02A458, #2C2C2C);
+        background:    -moz-linear-gradient( #02A458, #2C2C2C);
+        background:     -ms-linear-gradient( #02A458, #2C2C2C);
+        background:      -o-linear-gradient( #02A458, #2C2C2C);
+        background:         linear-gradient( #02A458, #2C2C2C);
+        text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+        box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+}
+
+
+/* ---------------------------------------------------------------
+		Page principale 
+----------------------------------------------------------------*/
+
+
 div#page {
  
 	width: 800px;
@@ -231,20 +382,22 @@ a:active {
 }
 
 
+div#Option2 {
+        width: 300px;
+        height: 70px;
+      /*background-color: red; */
+        float: left;
+        margin-left: 40px;
+        margin-top: 15px;
+ }       
 
 
-
-
-
-
-
- 
 div#bouton2 {
 	font-family: Arial,sans-serif;
 	font-size: 1.5em;
 	width: 250px;
-	height: 62px;
-	padding-top: 8px;
+	height: 50px;
+	padding-top: 20px;
 	cursor: pointer;
 	margin: auto;
 	text-align: center;
@@ -281,14 +434,111 @@ div#bouton2:active {
 
 
 
- div#Option2 { 
-	width: 300px;
-	height: 70px;
-/*	background-color: red; */
-	float: left;
-	margin-left: 40px;
-	margin-top: 15px;
+ div#MenuP2 {
+        width: 750px;
+        height: 100px;
+        text-align: center;
+        border-width: 3px;
+        margin: auto;
+
  }
+
+ div#Option1b {
+        width: 300px;
+        height: 70px;
+        float: left;
+        margin-left: 60px;
+        margin-top: 15px;
+ }
+div#bouton1b {
+        font-family: Arial,sans-serif;
+        font-size: 1.5em;
+        width: 250px;
+        height: 50px;
+        padding-top: 20px;
+        cursor: pointer;
+        margin: auto;
+        text-align: center;
+        color: black;
+        background: #007536;
+        border-radius: 8px;
+        background: -webkit-linear-gradient( #00B454, #007536);
+        background:    -moz-linear-gradient( #00B454, #007536);
+        background:     -ms-linear-gradient( #00B454, #007536);
+        background:      -o-linear-gradient( #00B454, #007536);
+        background:         linear-gradient( #00B454, #007536);
+        text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+div#bouton1b:active {
+        font-family: Arial,sans-serif;
+        font-size: 1.5em;
+        width: 250px;
+        height: 50px;
+        padding-top: 20px;
+        cursor: pointer;
+        text-align: center;
+        color: ##02A458;
+        background: #02A458;
+        margin: auto;
+        border-radius: 8px;
+        background: -webkit-linear-gradient( #02A458, #2C2C2C);
+        background:    -moz-linear-gradient( #02A458, #2C2C2C);
+        background:     -ms-linear-gradient( #02A458, #2C2C2C);
+        background:      -o-linear-gradient( #02A458, #2C2C2C);
+        background:         linear-gradient( #02A458, #2C2C2C);
+        text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+        box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+}
+div#Option2b {
+        width: 300px;
+        height: 70px;
+      /*background-color: red; */
+        float: left;
+        margin-left: 40px;
+        margin-top: 15px;
+ }
+
+
+div#bouton2b {
+        font-family: Arial,sans-serif;
+        font-size: 1.5em;
+        width: 250px;
+        height: 62px;
+        padding-top: 8px;
+        cursor: pointer;
+        margin: auto;
+        text-align: center;
+        color: black;
+        background: #007536;
+        border-radius: 8px;
+        background: -webkit-linear-gradient( #00B454, #007536);
+        background:    -moz-linear-gradient( #00B454, #007536);
+        background:     -ms-linear-gradient( #00B454, #007536);
+        background:      -o-linear-gradient( #00B454, #007536);
+        background:         linear-gradient( #00B454, #007536);
+        text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+div#bouton2b:active {
+        font-family: Arial,sans-serif;
+        font-size: 1.5em;
+        width: 250px;
+        height: 62px;
+        padding-top: 8px;
+        cursor: pointer;
+        text-align: center;
+        color: ##02A458;
+        background: #02A458;
+        margin: auto;
+        border-radius: 8px;
+        background: -webkit-linear-gradient( #02A458, #2C2C2C);
+        background:    -moz-linear-gradient( #02A458, #2C2C2C);
+        background:     -ms-linear-gradient( #02A458, #2C2C2C);
+        background:      -o-linear-gradient( #02A458, #2C2C2C);
+        background:         linear-gradient( #02A458, #2C2C2C);
+        text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+        box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+}
+
  
  
  div#MenuA { 
@@ -299,7 +549,7 @@ div#bouton2:active {
 	/*border-style: solid;
  	border-color: black;*/
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 60px;
 	padding-bottom: 20px;	
  }
 
@@ -317,11 +567,31 @@ div#bouton2:active {
 	height: 70px;
 /*	background-color: red; */
 	float: left;
-	margin-left: 40px;
+	margin-left: 60px;
 	margin-top: 15px;
  
 }
  
  
+ div#MenuA2 { 
+	width: 750px;
+	height: 100px;
+	text-align: center;
+	border-width: 3px;
+	/*border-style: solid;
+ 	border-color: black;*/
+	margin: auto;
+	margin-top: 20px;
+	padding-bottom: 20px;	
+ }
+
+ div#Option5 { 
+	width: 300px;
+	height: 70px;
+/*	background-color: yellow; */
+	float: left;
+	margin-left: 230px;
+	margin-top: 15px;
+ }
  
 

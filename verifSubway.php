@@ -5,7 +5,8 @@ include "connexion.php";
 $bdd = connexion();
 ?>
 <head>
-	<link href="../chopsub/css/StyleVerifComm.css" rel="stylesheet" media="all" type="text/css">
+        <link href="./css/baniere.css" rel="stylesheet" media="all" type="text/css">
+	<link href="./css/StyleVerifSub.css" rel="stylesheet" media="all" type="text/css"> 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
 
@@ -35,6 +36,29 @@ Si login OK
 if ($donnees1['nb1']==1) {
 	?>
 <div id=header>
+
+
+        <div id=typecom>
+        <?php
+		/*
+                $connection->closeCursor();
+                $connection3 = $bdd->query("SELECT * FROM choix;");
+                $donnee3 = $connection3->fetch();
+                echo "Commande :";
+                echo "</br>";
+                echo "<div id=resultat>";
+                echo $donnee3['choix'];
+                echo "</div>";
+                echo "</br>";
+                echo "Selectionné le ";
+                echo "</br>";
+                echo "<div id=resultat>";
+                echo $donnee3['jour'];
+                echo "</div>";
+		*/
+        ?>
+        </div>
+
 	<div id=banniere>
 		<img src="images/banniere.jpg" />
 	</div>
@@ -49,8 +73,8 @@ if ($donnees1['nb1']==1) {
 	?>
 	</div>
 	<div id=deco>
-			<div id=boutonD onclick="self.location.href='deconnexion.php'">
-				deconnexion	
+			<div id=boutonDH onclick="self.location.href='deconnexion.php'">
+				déconnexion	
 			</div>
 	</div>
 </div>
@@ -61,7 +85,7 @@ $connection->closeCursor();
 /********************************************************
 si commande deja passe
 ********************************************************/
-$menu1 = $bdd->query("select count(*) as com from commande where nom='".$login."'");
+$menu1 = $bdd->query("select count(*) as com from subway where nom='".$login."'");
 $donnees1 = $menu1->fetch();
 if ($donnees1['com']!=0) {
 	?>	
@@ -86,7 +110,7 @@ Si pas de commande Affichage de la page
 <?php
 if ($_POST['pain']=='' || $_POST['taille']=='' || $_POST['viande']=='' || $_POST['fromage']=='' || $_POST['temperature']=='' || $_POST['sauce']=='') {
     echo "<div class=text>";
-	echo "Vous avez une erreur dans votre commande vous avez oublié un ingredient";
+	echo "Vous avez une erreur dans votre commande, vous avez oublié un ingrédient";
 	echo "<div id=footer>";
 	?>
 		<a href="javascript:history.back()">RETOUR</a>
@@ -101,33 +125,33 @@ else {
 	</div>
 	<div class=ligne1>
 		<div class=col1> PAIN :</div>
-		<div class=col2> <? echo $_POST['pain']; ?></div>
+		<div class=col2> <?php echo $_POST['pain']; ?></div>
 	</div>
 	<div class=ligne1>
 		<div class=col1> TAILLE :</div>
-		<div class=col2> <? echo $_POST['taille']; ?></div>
+		<div class=col2> <?php echo $_POST['taille']; ?></div>
 	</div>
 	<div class=ligne1>
 		<div class=col1> VIANDE :</div>
-		<div class=col2> <? echo $_POST['viande']; ?></div>
+		<div class=col2> <?php echo $_POST['viande']; ?></div>
 	</div>
 	<div class=ligne1>
 		<div class=col1> FROMAGE :</div>
-		<div class=col2> <? echo $_POST['fromage']; ?></div>
+		<div class=col2> <?php echo $_POST['fromage']; ?></div>
 	</div>
 	<div class=ligne1>
 		<div class=col1> TEMPERATURE :</div>
-		<div class=col2> <? echo $_POST['temperature']; ?></div>
+		<div class=col2> <?php echo $_POST['temperature']; ?></div>
 	</div>
 	<div class=ligne1>
 		<div class=col1> SAUCE :</div>
-		<div class=col2> <? echo $_POST['sauce']; ?></div>
+		<div class=col2> <?php echo $_POST['sauce']; ?></div>
 	</div>
 	<div class=ligne1>
 		<div class=col1> LEGUMES :</div>
 		<div class=col2> <?php echo $_POST['legume1']; ?> </div>
 	</div>
-	<? if ($_POST['legume2']!=''){
+	<?php if ($_POST['legume2']!=''){
 		echo "<div class=ligne1>";
 			echo "<div class=col2b>";
 				echo $_POST['legume2'];
@@ -349,7 +373,7 @@ if ($_POST['taille']=='15 cm') {
 
 
 		<div class=col1> PRIX : </div>
-		<div class=col2> <? echo $prix; ?></div>
+		<div class=col2> <?php echo $prix."€"; ?></div>
 	</div>
 
 
@@ -374,7 +398,7 @@ $sauce=$_POST['sauce'];
 ?>
 <a href="javascript:history.back()">RETOUR</a>
 <?php
-echo "<a href='enregCommande.php?pain=".$pain."&taille=".$taille."&viande=".$viande."&fromage=".$fromage."&temperature=".$temperature."&legume1=".$legume1."&legume2=".$legume2."&legume3=".$legume3."&legume4=".$legume4."&legume5=".$legume5."&legume6=".$legume6."&legume7=".$legume7."&legume8=".$legume8."&legume9=".$legume9."&legume10=".$legume10."&sauce=".$sauce."&prix=".$prix."'> ENREGISTER </a>";
+echo "<a href='enregSubway.php?pain=".$pain."&taille=".$taille."&viande=".$viande."&fromage=".$fromage."&temperature=".$temperature."&legume1=".$legume1."&legume2=".$legume2."&legume3=".$legume3."&legume4=".$legume4."&legume5=".$legume5."&legume6=".$legume6."&legume7=".$legume7."&legume8=".$legume8."&legume9=".$legume9."&legume10=".$legume10."&sauce=".$sauce."&prix=".$prix."'> ENREGISTER </a>";
 
 
 /*

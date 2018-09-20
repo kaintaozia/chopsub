@@ -5,7 +5,7 @@ include "connexion.php";
 $bdd = connexion();
 ?>
 <head>
-<link href="./css/StyleNewCpt.css" rel="stylesheet" media="all" type="text/css">
+<link href="./css/StyleIdenti.css" rel="stylesheet" media="all" type="text/css">
 <link href="./css/baniere.css" rel="stylesheet" media="all" type="text/css">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
@@ -26,7 +26,6 @@ $donnees1 = $connection->fetch();
 if ($donnees1['nb1']==1) {
 	?>
 <div id=header>
-
         <div id=typecom>
         <?php
                 $connection->closeCursor();
@@ -45,8 +44,6 @@ if ($donnees1['nb1']==1) {
                 echo "</div>";
         ?>
         </div>
-
-
 	<div id=banniere>
 		<img src="images/banniere.jpg" />
 	</div>
@@ -67,31 +64,16 @@ if ($donnees1['nb1']==1) {
 	</div>
 </div>
 <div id=page>
-	<div id=titre> CREATION D'UN NOUVEAU COMPTE </div>
-	<form action="creationCpt.php" method="post">
-		<div id=login>
-			<div id=text> nouveau login :</div>
-			<div id=saisie> <input type="text" name="nlogin" /> </div>
-		</div>
-		<div id=mdp>
-			<div id=text1> nouveau mot de passe : </div>
-			<div id=saisie1> <input type="password" name="nmdp" /> </div>
-		</div>
 
 
+<div id=MenuP>                                                                          
+	<div id=Option5>                                                              
+		<div id=bouton1 onclick="self.location.href='purge.php'">             
+                                effectuer la purge                                                       
+	</div>                                                                    
+</div>  
 
-	<div id=footer>
-
-			<div id=bouton1 onclick="self.location.href='identification.php'">
-				ACCUEIL
-			</div>
-		        <input type="submit" value="VALIDER" id="boutonV">
-	</div>
-	</div>
-		</div>
-</form>
 </div>
-
 		<?php
 }
 else {

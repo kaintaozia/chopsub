@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <?php
@@ -5,7 +6,7 @@ include "connexion.php";
 $bdd = connexion();
 ?>
 <head>
-<link href="./css/StyleNewCpt.css" rel="stylesheet" media="all" type="text/css">
+<link href="./css/StyleIdenti.css" rel="stylesheet" media="all" type="text/css">
 <link href="./css/baniere.css" rel="stylesheet" media="all" type="text/css">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
@@ -26,8 +27,7 @@ $donnees1 = $connection->fetch();
 if ($donnees1['nb1']==1) {
 	?>
 <div id=header>
-
-        <div id=typecom>
+	<div id=typecom>
         <?php
                 $connection->closeCursor();
                 $connection3 = $bdd->query("SELECT * FROM choix;");
@@ -45,8 +45,6 @@ if ($donnees1['nb1']==1) {
                 echo "</div>";
         ?>
         </div>
-
-
 	<div id=banniere>
 		<img src="images/banniere.jpg" />
 	</div>
@@ -66,32 +64,30 @@ if ($donnees1['nb1']==1) {
 			</div>
 	</div>
 </div>
+	<?php
+	$connection->closeCursor();
+	?>
 <div id=page>
-	<div id=titre> CREATION D'UN NOUVEAU COMPTE </div>
-	<form action="creationCpt.php" method="post">
-		<div id=login>
-			<div id=text> nouveau login :</div>
-			<div id=saisie> <input type="text" name="nlogin" /> </div>
-		</div>
-		<div id=mdp>
-			<div id=text1> nouveau mot de passe : </div>
-			<div id=saisie1> <input type="password" name="nmdp" /> </div>
-		</div>
 
 
+	<?php
+		$supp = $bdd->query("delete from subway");
+		$supp1 = $bdd->query("delete from commande");
+		$supp2 = $bdd->query("delete from choix");
+		$supp3 = $bdd->query("delete from pizza");
+		$supp3 = $bdd->query("delete from burger");
+	?>
 
-	<div id=footer>
-
-			<div id=bouton1 onclick="self.location.href='identification.php'">
+<div id=text>
+	Purge OK
+</div>	
+	<div id=boutonD onclick="self.location.href='identification.php'">
 				ACCUEIL
-			</div>
-		        <input type="submit" value="VALIDER" id="boutonV">
 	</div>
-	</div>
-		</div>
-</form>
-</div>
 
+
+
+</div>
 		<?php
 }
 else {

@@ -2,35 +2,58 @@
 entete de la page
 ******************************************/
 div#header {
-	width: 800px;	
-	height: 176px;
-	background-color: black; 
-	margin: auto;
-	text-align: center;
-} 
+        width: 800px;
+        height: 176px;
+/*      background-color: black; */
+        margin: auto;
+        text-align: center;
+        border-style: groove;
+        border-width: 3px;
+        border-radius: 10px;
+}
+
+
 div#banniere {
-	width: 650px;	
-	height: 170px;
-	background-color: black; 
-	text-align: left;
-	margin: auto;
-	float: left;
+        width: 500px;
+        height: 170px;
+/*      background-color: black; */
+/*      text-align: left; */
+        margin: auto;
+        float: left
 }
 
 div#connexion {
 	width: 150px;	
 	height: 45px;
-	background-color: black; 
+/*	background-color: black; */
 	text-align: center;
 	margin: auto;
 	float: right;
-	color: white;
+	color: black;
 	padding-top: 40px;
 }
+
+div#typecom {
+        width: 150px;
+        height: 45px;
+/*      background-color: black; */
+        text-align: center;
+        margin: auto;
+        float: left;
+        color: black;
+        padding-top: 40px;
+        Font-Weight: Bold;
+}
+
+div#resultat {
+        Font-Weight: Lighter;
+}
+
+
 div#deco {
 	width: 150px;	
 	height: 87px;
-	background-color: black; 
+/*	background-color: black; */
 	text-align: center;
 	margin: auto;
 	float: right;
@@ -119,12 +142,77 @@ div#boutonErr:active {
 	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
 	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
 }
+/**************************************************
+Style page global
+**************************************************/
+div#page {
+ 
+	width: 800px;
+	height: auto;
+	padding-bottom: 10px;
+	background-color: #228751; 
+	text-align: center;
+	padding-top: 20px;
+	margin: auto;
+	border-radius: 10px; 
+ }
+#text {
+	width: 400px;
+	height: 40px;
+	font-weight: bold;
+	padding-top: 10px;
+	margin: auto;
+
+}
+
+
+/**************************************************
+Affichage commande
+**************************************************/
+div.ligne1 {
+	width: 300px;
+	margin: auto;
+	height: 30px;
+}
+
+div.col1 {
+	width: 150px;
+	margin: auto;
+	height: auto;
+	float: left;
+	text-align: left;
+}
+
+div.col2{
+	width: 150px;
+	margin: auto;
+	height: auto;
+	float: left;
+	text-align: left;
+}
+div.col2b{
+	width: 120px;
+	margin: auto;
+	padding-left: 150px;
+	height: auto;
+	text-align: left;
+	float: left;
+}
+div#footer {
+	width: 800px;	
+	height: 70px;
+	text-align: center;
+	margin: auto;
+	padding-top: 20px;
+	padding-left: 240px;
+}
+
 #bouton1 {
 	font-family: Arial,sans-serif;
 	float: left;
 	font-size: 1.0em;
 	width: 150px;
-	height: 40px;
+	height: 30px;
 	cursor: pointer;
 	margin: auto;
 	margin-right: 20px;
@@ -162,34 +250,49 @@ div#boutonErr:active {
 	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
 	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
 }
-/**************************************************
-Style page global
-**************************************************/
-div#page {
- 
-	width: 800px;
-	height: auto;
-	padding-bottom: 10px;
-	background-color: #228751; 
-	text-align: center;
-	padding-top: 20px;
+a {
+	font-family: Arial,sans-serif;
+	float: left;
+	text-decoration:none;
+	font-size: 1.0em;
+	width: 150px;
+	height: 30px;
+	cursor: pointer;
 	margin: auto;
-	border-radius: 10px; 
- }
-div#footer {
-	width: 800px;	
-	height: 70px;
+	margin-right: 20px;
 	text-align: center;
-	margin: auto;
-	padding-top: 20px;
-	padding-left: 240px;
+	border: 0px;
+	padding-top:10px;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #00B454, #007536);
+	background:    -moz-linear-gradient( #00B454, #007536);
+	background:     -ms-linear-gradient( #00B454, #007536);
+	background:      -o-linear-gradient( #00B454, #007536);
+	background:         linear-gradient( #00B454, #007536);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
 }
-#text {
-	width: 400px;
-	height: 40px;
-	font-weight: bold;
+a:active {
+	font-family: Arial,sans-serif;
+	float: left;
+	font-size: 1.0em;
+	text-decoration:none;
+	width: 150px;
+	height: 30px;
 	padding-top: 10px;
+	cursor: pointer;
 	margin: auto;
-
+	margin-right: 20px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #02A458, #2C2C2C);
+	background:    -moz-linear-gradient( #02A458, #2C2C2C);
+	background:     -ms-linear-gradient( #02A458, #2C2C2C);
+	background:      -o-linear-gradient( #02A458, #2C2C2C);
+	background:         linear-gradient( #02A458, #2C2C2C);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
 }
-

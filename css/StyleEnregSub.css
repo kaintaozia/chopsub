@@ -1,69 +1,102 @@
+div#boutonErr {
+	font-family: Arial,sans-serif;
+	font-size: 0.8em;
+	width: 110px;
+	height: 30px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #00B454, #007536);
+	background:    -moz-linear-gradient( #00B454, #007536);
+	background:     -ms-linear-gradient( #00B454, #007536);
+	background:      -o-linear-gradient( #00B454, #007536);
+	background:         linear-gradient( #00B454, #007536);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+
+div#boutonErr:active {
+	font-family: Arial,sans-serif;
+	font-size: 0.8em;
+	width: 110px;
+	height: 30px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #02A458, #2C2C2C);
+	background:    -moz-linear-gradient( #02A458, #2C2C2C);
+	background:     -ms-linear-gradient( #02A458, #2C2C2C);
+	background:      -o-linear-gradient( #02A458, #2C2C2C);
+	background:         linear-gradient( #02A458, #2C2C2C);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
+}
+#bouton1 {
+	font-family: Arial,sans-serif;
+	float: left;
+	font-size: 1.0em;
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	margin: auto;
+	margin-right: 20px;
+	text-align: center;
+	border: 0px;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #00B454, #007536);
+	background:    -moz-linear-gradient( #00B454, #007536);
+	background:     -ms-linear-gradient( #00B454, #007536);
+	background:      -o-linear-gradient( #00B454, #007536);
+	background:         linear-gradient( #00B454, #007536);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+#bouton1:active {
+	font-family: Arial,sans-serif;
+	float: left;
+	font-size: 1.0em;
+	width: 150px;
+	height: 40px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin: auto;
+	margin-right: 20px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #02A458, #2C2C2C);
+	background:    -moz-linear-gradient( #02A458, #2C2C2C);
+	background:     -ms-linear-gradient( #02A458, #2C2C2C);
+	background:      -o-linear-gradient( #02A458, #2C2C2C);
+	background:         linear-gradient( #02A458, #2C2C2C);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
+}
+/**************************************************
+Style page global
+**************************************************/
 div#page {
  
 	width: 800px;
 	height: auto;
-	background-color: #228751;
+	padding-bottom: 10px;
+	background-color: #228751; 
 	text-align: center;
 	padding-top: 20px;
 	margin: auto;
+	border-radius: 10px; 
  }
-
-div#titre{
-	width: 800px;
-	height: 50px;
-	text-align: center;
-	margin: auto;
-	font-size: 150%;
-	font-weight: bold;
- }
-
-div#login {
-	width: 800px;	
-	height: 30px;
-	text-align: center;
-	margin: auto;
- }
-
-div#text {
-	width: 320px;	
-	height: 30px;
-	text-align: right;
-	margin: auto, auto, -1px, auto;
-	float: left;
- }
-
-div#saisie {
-	width: 470px;	
-	height: 30px;
-	text-align: left;
-	margin: auto;
-	float: right;
- }
-
-div#mdp {
-	width: 800px;	
-	height: 30px;
-	text-align: center;
-	margin: auto;
- }
-
-div#text1 {
-	width: 320px;	
-	height: 30px;
-	text-align: right;
-	margin: auto;
-	float: left;
- }
-
-div#saisie1 {
-	width: 470px;	
-	height: 30px;
-	text-align: left;
-	margin: auto;
-	float: right;
-	padding-bottom: -10px;
- }
-
 div#footer {
 	width: 800px;	
 	height: 70px;
@@ -72,92 +105,12 @@ div#footer {
 	padding-top: 20px;
 	padding-left: 240px;
 }
-div#bouton1 {
-	font-family: Arial,sans-serif;
-	float: left;
-	font-size: 1.0em;
-	width: 150px;
-	height: 30px;
-	padding-top: 10px;
-	cursor: pointer;
-	margin: auto;
-	margin-right: 20px;
-	text-align: center;
-	color: black;
-	background: #007536;
-	border-radius: 8px; 
-	background: -webkit-linear-gradient( #00B454, #007536);
-	background:    -moz-linear-gradient( #00B454, #007536);
-	background:     -ms-linear-gradient( #00B454, #007536);
-	background:      -o-linear-gradient( #00B454, #007536);
-	background:         linear-gradient( #00B454, #007536);
-	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
-}
-div#bouton1:active {
-	font-family: Arial,sans-serif;
-	float: left;
-	font-size: 1.0em;
-	width: 150px;
-	height: 30px;
-	padding-top: 10px;
-	cursor: pointer;
-	margin: auto;
-	margin-right: 20px;
-	text-align: center;
-	color: black;
-	background: #007536;
-	border-radius: 8px; 
-	background: -webkit-linear-gradient( #02A458, #2C2C2C);
-	background:    -moz-linear-gradient( #02A458, #2C2C2C);
-	background:     -ms-linear-gradient( #02A458, #2C2C2C);
-	background:      -o-linear-gradient( #02A458, #2C2C2C);
-	background:         linear-gradient( #02A458, #2C2C2C);
-	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
-	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
-}
-#boutonV {
-	text-decoration: none;
-	border: 0px;
-	font-family: Arial,sans-serif;
-	float: left;
-	font-size: 1.0em;
-	width: 150px;
+#text {
+	width: 400px;
 	height: 40px;
-	cursor: pointer;
+	font-weight: bold;
+	padding-top: 10px;
 	margin: auto;
-	margin-right: 20px;
-	text-align: center;
-	color: black;
-	background: #007536;
-	border-radius: 8px; 
-	background: -webkit-linear-gradient( #00B454, #007536);
-	background:    -moz-linear-gradient( #00B454, #007536);
-	background:     -ms-linear-gradient( #00B454, #007536);
-	background:      -o-linear-gradient( #00B454, #007536);
-	background:         linear-gradient( #00B454, #007536);
-	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+
 }
 
-#boutonV:active {
-	text-decoration: none;
-	border: 0px;
-	font-family: Arial,sans-serif;
-	float: left;
-	font-size: 1.0em;
-	width: 150px;
-	height: 40px;
-	cursor: pointer;
-	margin: auto;
-	margin-right: 20px;
-	text-align: center;
-	color: black;
-	background: #007536;
-	border-radius: 8px; 
-	background: -webkit-linear-gradient( #02A458, #2C2C2C);
-	background:    -moz-linear-gradient( #02A458, #2C2C2C);
-	background:     -ms-linear-gradient( #02A458, #2C2C2C);
-	background:      -o-linear-gradient( #02A458, #2C2C2C);
-	background:         linear-gradient( #02A458, #2C2C2C);
-	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
-	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
-}
