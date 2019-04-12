@@ -1,14 +1,16 @@
 <?php
-$db=mysqli_connect("us-cdbr-iron-east-01.cleardb.net","bdc4ca09f8e066","0e2c8e68");
-mysqli_select_db($db,"heroku_8c727900bd20d2d");
-$query="select * from commande";
+$db=mysqli_connect("localhost","chopsub","chopsub");
+mysqli_select_db($db,"chopsub");
+//$db=mysqli_connect("us-cdbr-iron-east-01.cleardb.net","bdc4ca09f8e066","0e2c8e68");
+//mysqli_select_db($db,"heroku_8c727900bd20d2d");
+$query="select * from pizza";
 $resultat=mysqli_query($db,$query);
 Include("phpToPDF.php");
 $PDF = new phpToPDF();
 $PDF->AddPage(L);
 //Séction de la police
 $PDF->SetFont('Arial','B',11);
-$PDF->MultiCell(0, 10, "Formulaire menu\n Subway Chopine", 1, "C", 0);
+$PDF->MultiCell(0, 10, "Formulaire menu\n Pizza Chopine", 1, "C", 0);
 $PDF->Ln(5);
 while ($donnee=mysqli_fetch_array($resultat)){;
 //$donnee=mysqli_fetch_array($resultat);
@@ -37,8 +39,9 @@ $proprieteHeader = array(
 
 // Contenu du header du tableau.	
 $contenuHeader = array(
-	35, 35, 35, 35, 35, 35, 35,
-	"[B]".$donnee['nom']."", $donnee['pain'],  $donnee['taille'],  $donnee['viande'],  $donnee['fromage'], $donnee['temperature'], $donnee['legume1'],
+	35, 50, 35, 35,
+//	"[B]".$donnee['nom']."", $donnee['pizza'],  $donnee['taille'],  $donnee['patte'],
+	"[B]".$donnee['nom']."", " ",  " ",  " "
 	);
 
 // Dénition des propriés du reste du contenu du tableau.	
@@ -59,21 +62,20 @@ $proprieteContenu = array(
 	'BG_COLOR_COL0' => array(200,200,200),
 	);	
 
-// Contenu du tableau.	
+
+
+
+
 $contenuTableau = array(
-	" ", $donnee['legume2'], $donnee['legume3'], $donnee['legume4'], $donnee['legume5'], $donnee['legume6'], $donnee['legume7'], 
-	" ",  $donnee['legume8'], $donnee['legume9'], $donnee['legume10'], $donnee['sauce'],
+	" ", $donnee['pizza'], $donnee['patte'], $donnee['taille']," info :" ,$donnee['info'],
 	);	
 
- 
 // D'abord le PDF, puis les propriés globales du tableau. 
 // Ensuite, le header du tableau (propriés et donné) puis le contenu (propriés et donné)
 $PDF->drawTableau($PDF, $proprietesTableau, $proprieteHeader, $contenuHeader, $proprieteContenu, $contenuTableau);
 $PDF->Ln(3);
 }
 $PDF->Output();
-  
 
-	
 
 ?>

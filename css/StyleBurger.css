@@ -1,0 +1,276 @@
+/**************************************************
+Style page global
+**************************************************/
+
+div#page {
+ 
+	width: 800px;
+	height: auto;
+	background-color: #228751; 
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin: auto;
+	border-radius: 10px; 
+ }
+div.titre {
+	width: 350px;
+	height: 20px;
+	padding-bottom: 10px; 
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+
+
+/**************************************************
+Style page burger
+**************************************************/
+div#burger{
+	width: 780px;
+        height: auto;
+	margin: auto;
+ 	padding-top: 5px;
+	border-width: 2px;
+        border-style: solid;
+        border-color: black;
+}
+
+div#ligne1{
+	width: 780px;
+        height: 35px;
+	padding-bottom: 10px;
+}
+
+div#titre1 {
+	width: 580px;
+        height: auto;
+        float: left;
+}
+
+
+div.CocheP1{
+	width: 30px;
+        height: auto;
+        float: left;
+}
+div#col1{
+	width: 550px;
+        height: auto;
+	float: left;
+	text-align: left
+}
+div#col2{
+	width: 100px;
+        height: auto;
+	float: left;
+}
+
+div#col3{
+	width: 100px;
+        height: auto;
+	float: left;
+}
+
+/**************************************************
+Style page formule
+**************************************************/
+
+div#formule{
+        width: 780px;
+        height: 35px;
+        margin: auto;
+        padding-top: 10px;
+	margin-top: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+}
+
+div#titre2 {
+        width: 780px;
+        height: 35px;
+}
+
+/**************************************************
+Style page info
+**************************************************/
+div#info {
+        width: 700px;
+        height: 40px;
+        margin: auto;
+        text-align: left;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        margin-top: 20px;
+}
+
+div#titre3 {
+        width: 75px;
+        height: 30px;
+        padding-bottom: 10px;
+        padding-top: 7px;
+        padding-left: 5px;
+        float: left;
+}
+
+div#info1 {                                                                                                         
+        width: 200px;                                                                                                 
+        height: 30px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-top: 10px;
+        float: left;
+}
+
+
+
+
+/*-----------------------------------
+---------- PIED DE PAGE  ------------
+-----------------------------------*/
+div#footer {
+	width: 800px;	
+	height: 70px;
+	text-align: center;
+	margin: auto;
+	padding-top: 20px;
+	padding-left: 240px;
+}
+div#bouton1 {
+	font-family: Arial,sans-serif;
+	float: left;
+	font-size: 1.0em;
+	width: 150px;
+	height: 30px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin: auto;
+	margin-right: 20px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #00B454, #007536);
+	background:    -moz-linear-gradient( #00B454, #007536);
+	background:     -ms-linear-gradient( #00B454, #007536);
+	background:      -o-linear-gradient( #00B454, #007536);
+	background:         linear-gradient( #00B454, #007536);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+div#bouton1:active {
+	font-family: Arial,sans-serif;
+	float: left;
+	font-size: 1.0em;
+	width: 150px;
+	height: 30px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin: auto;
+	margin-right: 20px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #02A458, #2C2C2C);
+	background:    -moz-linear-gradient( #02A458, #2C2C2C);
+	background:     -ms-linear-gradient( #02A458, #2C2C2C);
+	background:      -o-linear-gradient( #02A458, #2C2C2C);
+	background:         linear-gradient( #02A458, #2C2C2C);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
+}
+#boutonV {
+	text-decoration: none;
+	border: 0px;
+	font-family: Arial,sans-serif;
+	float: left;
+	font-size: 1.0em;
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	margin: auto;
+	margin-right: 20px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #00B454, #007536);
+	background:    -moz-linear-gradient( #00B454, #007536);
+	background:     -ms-linear-gradient( #00B454, #007536);
+	background:      -o-linear-gradient( #00B454, #007536);
+	background:         linear-gradient( #00B454, #007536);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+
+#boutonV:active {
+	text-decoration: none;
+	border: 0px;
+	font-family: Arial,sans-serif;
+	float: left;
+	font-size: 1.0em;
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	margin: auto;
+	margin-right: 20px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #02A458, #2C2C2C);
+	background:    -moz-linear-gradient( #02A458, #2C2C2C);
+	background:     -ms-linear-gradient( #02A458, #2C2C2C);
+	background:      -o-linear-gradient( #02A458, #2C2C2C);
+	background:         linear-gradient( #02A458, #2C2C2C);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
+}
+
+div#boutonErr {
+	font-family: Arial,sans-serif;
+	font-size: 0.8em;
+	width: 110px;
+	height: 30px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #00B454, #007536);
+	background:    -moz-linear-gradient( #00B454, #007536);
+	background:     -ms-linear-gradient( #00B454, #007536);
+	background:      -o-linear-gradient( #00B454, #007536);
+	background:         linear-gradient( #00B454, #007536);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+}
+
+div#boutonErr:active {
+	font-family: Arial,sans-serif;
+	font-size: 0.8em;
+	width: 110px;
+	height: 30px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	color: black;
+	background: #007536;
+	border-radius: 8px; 
+	background: -webkit-linear-gradient( #02A458, #2C2C2C);
+	background:    -moz-linear-gradient( #02A458, #2C2C2C);
+	background:     -ms-linear-gradient( #02A458, #2C2C2C);
+	background:      -o-linear-gradient( #02A458, #2C2C2C);
+	background:         linear-gradient( #02A458, #2C2C2C);
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+	box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4); 
+}
+div#text {
+	font-size: 1.2em;
+}
+

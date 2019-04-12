@@ -1,9 +1,12 @@
 div#header {
-	width: 800px;	
-	height: 176px;
-	background-color: black; 
-	margin: auto;
-	text-align: center;
+        width: 800px;
+        height: 130px;
+/*      background-color: black; */
+        margin: auto;
+        text-align: center;
+        border-style: groove;
+        border-width: 3px;
+        border-radius: 10px;
 } 
 div#page {
  

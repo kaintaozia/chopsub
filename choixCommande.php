@@ -1,13 +1,20 @@
+<?php 
+header ("Refresh:1 ;URL=identification.php");
+// Redirection vers page_suivante.php après un délai de 5 secondes
+// durant lesquelles la page actuelle (page_premiere.php, par exemple) est affichée
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <html>
 <?php
 include "connexion.php";
 $bdd = connexion();
+error_reporting(E_ALL);
+$date = date("Y-m-j");
 ?>
 <head>
-<link href="./css/StyleNewCpt.css" rel="stylesheet" media="all" type="text/css">
+<link href="./css/StyleAffichComm.css" rel="stylesheet" media="all" type="text/css">
 <link href="./css/baniere.css" rel="stylesheet" media="all" type="text/css">
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
 
 <body>
@@ -26,7 +33,6 @@ $donnees1 = $connection->fetch();
 if ($donnees1['nb1']==1) {
 	?>
 <div id=header>
-
         <div id=typecom>
         <?php
                 $connection->closeCursor();
@@ -45,7 +51,6 @@ if ($donnees1['nb1']==1) {
                 echo "</div>";
         ?>
         </div>
-
 
 	<div id=banniere>
 		<img src="images/banniere.jpg" />
@@ -66,33 +71,51 @@ if ($donnees1['nb1']==1) {
 			</div>
 	</div>
 </div>
+	<?php
+	$connection->closeCursor();
+	?>
+
+
+
+
 <div id=page>
-	<div id=titre> CREATION D'UN NOUVEAU COMPTE </div>
-	<form action="creationCpt.php" method="post">
-		<div id=login>
-			<div id=text> nouveau login :</div>
-			<div id=saisie> <input type="text" name="nlogin" /> </div>
+<?php
+$connection1 = $bdd->query("SELECT jour FROM choix;");
+$donnees2 = $connection1->fetch();
+$dateJ=strtotime($date);
+$dateBDD=strtotime($donnees2['jour']);
+$dateJ1=$dateBDD+86400;
+
+	if ($donnees2['jour']=='' || $dateJ>$dateJ1 ) {
+	?>
+		<div id=text>
+        		Vous avez selectionné
+		        <?php echo $_POST['commande'];
+		/*	echo "---";
+			echo $dateJ;
+			echo "----";
+			echo $donnees2['jour'];
+			 echo "----";
+			echo $dateJ1;*/
+			$comm = strtolower($_POST['commande']);
+			$menu2 = $bdd->query("delete from choix;");
+		        $menu = $bdd->query("insert choix(choix, jour) values('".$comm."','".$date."');");
+		        ?>
 		</div>
-		<div id=mdp>
-			<div id=text1> nouveau mot de passe : </div>
-			<div id=saisie1> <input type="password" name="nmdp" /> </div>
-		</div>
-
-
-
-	<div id=footer>
-
-			<div id=bouton1 onclick="self.location.href='identification.php'">
-				ACCUEIL
-			</div>
-		        <input type="submit" value="VALIDER" id="boutonV">
-	</div>
-	</div>
-		</div>
-</form>
-</div>
-
 		<?php
+		$connection1->closeCursor();
+	}else {	
+		?>
+			<div id=text>
+				La selection du type de commande a déjà été il y a moins de 48h
+			</div>
+		<?php
+	}
+	?>
+	
+
+<?php
+echo "</div>";
 }
 else {
 	?>
@@ -113,12 +136,12 @@ else {
 
 	<?php
 }	
-
 $connection2->closeCursor();
 ?>
 
 
+
+
+
 </body>
 </html>
-
-

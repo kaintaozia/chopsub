@@ -2,35 +2,58 @@
 entete de la page
 ******************************************/
 div#header {
-	width: 800px;	
-	height: 176px;
-	background-color: black; 
-	margin: auto;
-	text-align: center;
-} 
+        width: 800px;
+        height: 176px;
+/*      background-color: black; */
+        margin: auto;
+        text-align: center;
+        border-style: groove;
+        border-width: 3px;
+        border-radius: 10px;
+}
+
+
 div#banniere {
-	width: 650px;	
-	height: 170px;
-	background-color: black; 
-	text-align: left;
-	margin: auto;
-	float: left;
+        width: 500px;
+        height: 170px;
+/*      background-color: black; */
+/*      text-align: left; */
+        margin: auto;
+        float: left
 }
 
 div#connexion {
 	width: 150px;	
 	height: 45px;
-	background-color: black; 
+/*	background-color: black; */
 	text-align: center;
 	margin: auto;
 	float: right;
-	color: white;
+	color: black;
 	padding-top: 40px;
 }
+
+div#typecom {
+        width: 150px;
+        height: 45px;
+/*      background-color: black; */
+        text-align: center;
+        margin: auto;
+        float: left;
+        color: black;
+        padding-top: 40px;
+        Font-Weight: Bold;
+}
+
+div#resultat {
+        Font-Weight: Lighter;
+}
+
+
 div#deco {
 	width: 150px;	
 	height: 87px;
-	background-color: black; 
+/*	background-color: black; */
 	text-align: center;
 	margin: auto;
 	float: right;
