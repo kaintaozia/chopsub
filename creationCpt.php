@@ -51,6 +51,7 @@ if ($donnees1['nb1']==1) {
 <?php
 $nlogin=$_POST['nlogin'];
 $nmdp=md5($_POST['nmdp']);
+$role=$_POST['role'];
 $connection2 = $bdd->query("SELECT COUNT(*) as nb1 FROM identi where login='".$nlogin."'");
 $donnees2 = $connection2->fetch();
 if ($donnees2['nb1'] !=0) {
@@ -65,10 +66,10 @@ if ($donnees2['nb1'] !=0) {
 }
 else {
 	$connection2->closeCursor();
-	if ($_POST['nlogin'] !='' and $_POST['nmdp'] !='')
+	if ($_POST['nlogin'] !='' and $_POST['nmdp'] !='' and $_POST['role'] !='')
 	{
 	//	$req="insert into identi (login, mdp) values ('".$nlogin."','".$nmdp."')";
-		$bdd->exec("insert into identi (login, mdp, admin) values ('".$nlogin."','".$nmdp."','0');");
+		$bdd->exec("insert into identi (login, mdp, admin) values ('".$nlogin."','".$nmdp."','".$role."');");
 		?>
 		<div class=text> Creation du compte effectué. </div>
 			<div id=footer>

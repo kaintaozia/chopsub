@@ -77,7 +77,17 @@ if ($donnees1['nb1']==1) {
 			<div id=text1> nouveau mot de passe : </div>
 			<div id=saisie1> <input type="password" name="nmdp" /> </div>
 		</div>
-
+		<div id=mdp>
+                        <div id=text1> role : </div>
+                        <div id=saisie1> 
+				<select name="role" > 
+					<option value="0">utilisasteur</option>
+					<option value="1">admin</option>
+					<option value="2">presta</option>
+				</select>
+			
+			</div>
+                </div>
 
 
 	<div id=footer>
